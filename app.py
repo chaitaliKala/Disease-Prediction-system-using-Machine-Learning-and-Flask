@@ -39,11 +39,7 @@ def disease_predict():
 # @app.route('/default')
 # def default():
 #         return render_template('includes/default.html')
- 
-@app.route('/find_doctor', methods=['POST'])
-def get_location():
-    location = request.form['doctor']
-    return render_template('find_doctor.html',location=location,symptoms=symptoms)
+
 
 @app.route('/drug', methods=['POST'])
 def drugs():
